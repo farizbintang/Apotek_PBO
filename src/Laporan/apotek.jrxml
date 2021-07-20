@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="dd2f0d35-7824-4158-968f-a71aad6c656b">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT * from tabel_produk]]>
+	</queryString>
+	<field name="kode_produk" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="nama_produk" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="jenis_produk" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="stok" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="harga_barang" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="2108f54d-fd5e-4bb7-9051-bef0f54b36ce" x="143" y="45" width="276" height="34"/>
+				<textElement>
+					<font fontName="Algerian" size="22" isBold="true"/>
+				</textElement>
+				<text><![CDATA[LAPORAN DATA PRODUK ]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="41" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="a8a9b3fd-4fd4-4ea8-8b9e-2293fd6174fe" x="190" y="0" width="184" height="20"/>
+				<textElement>
+					<font fontName="Gill Sans MT" size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[APOTEK YOUR WISH]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="33" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="806ba6b4-03a1-4a91-9b65-6e08e46a9659" x="0" y="13" width="100" height="20"/>
+				<textElement>
+					<font fontName="Forte" size="14"/>
+				</textElement>
+				<text><![CDATA[Kode Produk]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="806ba6b4-03a1-4a91-9b65-6e08e46a9659" x="100" y="13" width="100" height="20"/>
+				<textElement>
+					<font fontName="Forte" size="14"/>
+				</textElement>
+				<text><![CDATA[Nama Produk]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="806ba6b4-03a1-4a91-9b65-6e08e46a9659" x="200" y="13" width="100" height="20"/>
+				<textElement>
+					<font fontName="Forte" size="14"/>
+				</textElement>
+				<text><![CDATA[Jenis Produk]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="806ba6b4-03a1-4a91-9b65-6e08e46a9659" x="300" y="13" width="100" height="20"/>
+				<textElement>
+					<font fontName="Forte" size="14"/>
+				</textElement>
+				<text><![CDATA[Stok]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="806ba6b4-03a1-4a91-9b65-6e08e46a9659" x="400" y="13" width="100" height="20"/>
+				<textElement>
+					<font fontName="Forte" size="14"/>
+				</textElement>
+				<text><![CDATA[Harga Produk]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="30" splitType="Stretch">
+			<textField>
+				<reportElement uuid="1cb12961-86c0-4a79-a5c0-8cac59bd718a" x="0" y="0" width="100" height="20"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{kode_produk}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="1cb12961-86c0-4a79-a5c0-8cac59bd718a" x="100" y="0" width="100" height="20"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nama_produk}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="1cb12961-86c0-4a79-a5c0-8cac59bd718a" x="200" y="0" width="100" height="20"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{jenis_produk}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="1cb12961-86c0-4a79-a5c0-8cac59bd718a" x="300" y="0" width="100" height="20"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{stok}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="1cb12961-86c0-4a79-a5c0-8cac59bd718a" x="400" y="0" width="100" height="20"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{harga_barang}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
